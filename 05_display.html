@@ -14,6 +14,10 @@
       padding: 5px;
     }
 
+    .borda {
+      border: 2px dashed red;
+    }
+
     .img-a {
       width: 65px;
     }
@@ -54,6 +58,11 @@
 
     <p>Com CSS, podemos marcar um elemento para ser inline com a propriedade <code>display: inline</code>.</p>
 
+    <p><span class="borda">Estes</span> <span class="borda">elementos</span> <span class="borda">são</span> <strong
+        class="borda">todos</strong>
+      <emph class="borda">inline</emph>.
+    </p>
+
     <h2>Elementos block</h2>
 
     <p>Os elementos <emph>block</emph> são sempre dispostos sozinhos em uma linha, ocupando todo o espaço horizontal
@@ -68,6 +77,14 @@
       <li>div, main, footer</li>
       <li>ol, ul</li>
     </ul>
+
+    <p class="borda">Este é um elemento block.</p>
+
+    <h2 class="borda">Este elemento também é block</h2>
+
+    <div class="card">Idem.</div>
+
+    <div class="borda">Ibidem.</div>
 
     <h2>Elementos inline-block</h2>
 
@@ -95,7 +112,8 @@
     </div>
 
     <div class="card">
-      <img class="img-b" src="img/cafe.png"> O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que
+      <img class="img-b" src="img/cafe.png"> O café não é apenas uma bebida apreciada por milhões, mas também possui
+      propriedades que
       podem trazer benefícios ao corpo e à mente. O café é rico em antioxidantes, como os polifenóis, que ajudam a
       combater os radicais livres no organismo, contribuindo para a saúde celular e prevenindo o envelhecimento
       precoce.O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que podem trazer
