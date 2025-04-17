@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Propriedade display</title>
+  <meta name="author" content="Lucas Hermann Negri">
+
+  <style>
+    .card {
+      width: 600px;
+      border: 5px solid darkcyan;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 5px;
+    }
+
+    .img-a {
+      width: 65px;
+    }
+
+    .img-b {
+      float: left;
+      width: 65px;
+    }
+
+    .img-c {
+      float: right;
+      width: 65px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Elementos inline, block, inline-block e floats</h1>
+
+    <p>Utilizamos as propriedades <emph>display</emph> e <emph>float</emph> para controlar a forma na qual um elemento é
+      posicionado na página
+      e como os seus filhos são posicionados.</p>
+
+    <h2>Elementos inline</h2>
+
+    Os elementos <emph>inline</emph> são dispostos um ao lado do outro (no nosso padrão, da esqueda para a direita). O
+    seu tamanho não pode ser controlado pelas propriedades <emph>width</emph> e <emph>height</emph>.
+
+    <h3>Exemplos de elementos inline:</h3>
+
+    <ul>
+      <li>a</li>
+      <li>emph</li>
+      <li>strong</li>
+      <li>span</li>
+    </ul>
+
+    <p>Com CSS, podemos marcar um elemento para ser inline com a propriedade <code>display: inline</code>.</p>
+
+    <h2>Elementos block</h2>
+
+    <p>Os elementos <emph>block</emph> são sempre dispostos sozinhos em uma linha, ocupando todo o espaço horizontal
+      disponível. Ao adicionar múltiplos elementos <emph>block</emph> em uma página, estes acabam ficando empilhados.
+    </p>
+
+    <h3>Exemplos de elementos block:</h3>
+
+    <ul>
+      <li>p</li>
+      <li>h1, h2, ...</li>
+      <li>div, main, footer</li>
+      <li>ol, ul</li>
+    </ul>
+
+    <h2>Elementos inline-block</h2>
+
+    <p>Os elementos <emph>inline-block</emph> permitem a configuração de sua altura e largura no CSS (diferindo dos
+      <emph>inline</emph>) e não forçam a quebra da linha como ocorre nos elementos <emph>block</emph>.
+    </p>
+
+    <p>Exemplo de elemento <emph>inline-block</emph>: img</p>
+
+    <h2>Floats</h2>
+
+    O uso de <code>float: left</code> e <code>float: right</code> permitem com que um elemento saia do fluxo normal de
+    leiaute e seja posicionado à esquerda ou à direita do seu container, possibilitando com que texto e demais elementos
+    inline sejam dispostos ao seu redor.
+
+    <h3>Exemplos</h3>
+
+    <div class="card">
+      <img class="img-a" src="img/cafe.png"> O café não é apenas uma bebida apreciada por milhões, mas também possui
+      propriedades que
+      podem trazer benefícios ao corpo e à mente. O café é rico em antioxidantes, como os polifenóis, que ajudam a
+      combater os radicais livres no organismo, contribuindo para a saúde celular e prevenindo o envelhecimento
+      precoce.O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que podem trazer
+      benefícios ao corpo e à mente.
+    </div>
+
+    <div class="card">
+      <img class="img-b" src="img/cafe.png"> O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que
+      podem trazer benefícios ao corpo e à mente. O café é rico em antioxidantes, como os polifenóis, que ajudam a
+      combater os radicais livres no organismo, contribuindo para a saúde celular e prevenindo o envelhecimento
+      precoce.O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que podem trazer
+      benefícios ao corpo e à mente.
+    </div>
+
+    <div class="card">
+      <img class="img-c" src="img/cafe.png"> O café não é apenas uma bebida apreciada por milhões, mas também
+      possui propriedades que
+      podem trazer benefícios ao corpo e à mente. O café é rico em antioxidantes, como os polifenóis, que ajudam a
+      combater os radicais livres no organismo, contribuindo para a saúde celular e prevenindo o envelhecimento
+      precoce.O café não é apenas uma bebida apreciada por milhões, mas também possui propriedades que podem trazer
+      benefícios ao corpo e à mente.
+    </div>
+  </main>
+</body>
+
+</html>
