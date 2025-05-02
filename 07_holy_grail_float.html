@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Leiaute com floats</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main h1,
+    h2,
+    h3,
+    p {
+      margin-bottom: 20px;
+    }
+
+    body {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid black;
+    }
+
+    header {
+      background-color: #73A6AD;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    nav {
+      padding: 15px;
+      text-transform: uppercase;
+      background-color: #D8A7CA;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 1.25em;
+    }
+
+    nav li {
+      float: left;
+      padding-right: 20px;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 75%;
+      background-color: white;
+    }
+
+    aside {
+      float: left;
+      padding: 20px 10px;
+      width: 25%;
+    }
+
+    main, aside {
+      background-color: #4EFFEF;
+    }
+
+    footer {
+      background-color: cadetblue;
+      padding: 10px;
+    }
+
+    .clear::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clear">
+    <h1>Leiaute com float</h1>
+  </header>
+
+  <nav class="clear">
+    <ul>
+      <li>Home</li>
+      <li>Notícias</li>
+      <li>Sobre</li>
+    </ul>
+  </nav>
+
+  <main class="clear">
+    <article>
+      <h1>
+        Leiaute <q>Holy Grail</q>
+      </h1>
+
+      <p>
+        No mundo do desenvolvimento web, HTML (HyperText Markup Language) e CSS (Cascading Style Sheets) são os pilares
+        fundamentais que sustentam a criação de websites modernos e interativos. Juntos, eles formam a base para
+        apresentar conteúdo visualmente atraente e funcional aos usuários. Mas entender como usá-los de forma eficaz vai
+        muito além de simplesmente aprender as tags HTML e as propriedades CSS.
+      </p>
+
+      <h2>HTML: A Estrutura do Seu Website</h2>
+
+      <p>
+        O HTML é responsável por definir a estrutura e o conteúdo de um website. Ele usa tags para marcar diferentes
+        elementos, como títulos, parágrafos, imagens, links e listas.
+        Pense no HTML como o esqueleto do seu site, ele define o que está presente e onde.
+      </p>
+
+      <h2>CSS: A Estética e a Apresentação</h2>
+
+      <p>
+        O CSS, por outro lado, controla a aparência visual do seu website. Ele permite definir cores,
+        fontes, tamanhos, espaçamentos, layouts e muito mais. Através de regras, você pode direcionar como
+        cada elemento HTML deve ser exibido na tela. O CSS é o que dá vida ao esqueleto do HTML, tornando-o
+        agradável aos olhos e fácil de usar.
+      </p>
+
+      <h2>A Importância dos Elementos Semânticos no HTML</h2>
+
+      <p>
+        Nos últimos anos, tem havido uma crescente ênfase em utilizar elementos semânticos no HTML. O que são elementos
+        semânticos? São tags HTML que possuem um significado inerente, indicando o propósito de um determinado conteúdo
+      </p>
+
+    </article>
+    <aside>
+      <h3>Nota de acessibilidade:</h3>
+
+      <p>Os navegadores e tecnologias assistivas (leitores de tela, por exemplo) usam a semântica do HTML para entender
+        o conteúdo da página e fornecer uma experiência mais acessível aos usuários com deficiências.</p>
+
+    </aside>
+  </main>
+
+  <footer class="clear">
+    <p>
+      Meu rodapé. Nenhum direito reservado, 2025.
+    </p>
+  </footer>
+</body>
+
+</html>
