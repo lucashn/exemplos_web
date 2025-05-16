@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(230, 230, 25);
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: cadetblue;
+    font-size: 14pt;
+}
+
+nav li {
+    font-size: 20pt;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav {
+    line-height: 100px;
+}
+
+#container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cima {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 40px;
+}
+
+#cima h2 {
+    margin-bottom: 30px;
+}
+
+#cima img {
+    width: 400px;
+    height: 400px;
+}
+
+#porta-card {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    background-color: beige;
+    padding: 20px;
+}
+
+.card h2 {
+    color: black;
+    margin: 10px;
+}
+
+.card p {
+    color: black;
+}
+
+.card img {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
