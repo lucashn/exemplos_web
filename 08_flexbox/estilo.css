@@ -78,3 +78,9 @@ footer {
     margin-top: 100px;
     text-align: center;
 }
+
+#container {
+    padding: 25px;
+    border-left: 10px solid transparent;
+    border-image: url('assets/borda.png') 20% round;
+}

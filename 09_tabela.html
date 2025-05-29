@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Tabelas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #container {
+      width: max-content;
+      margin: 100px auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(140 140 140);
+    }
+
+    table caption {
+      margin-top: 20px;
+      caption-side: bottom;
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgb(245, 243, 243);
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(230, 227, 227);
+      padding: 8px 10px;
+    }
+
+    table td:nth-child(3), table td:nth-child(4) {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Pokédex</h1>
+
+    <table>
+      <caption>Tabela: atributos dos pokémons.</caption>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Ataque</th>
+        <th>Defesa</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Bulbasaur</td>
+        <td>49</td>
+        <td>49</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Ivysaur</td>
+        <td>62</td>
+        <td>63</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Venusaur</td>
+        <td>82</td>
+        <td>83</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Charmander</td>
+        <td>52</td>
+        <td>43</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Charmeleon</td>
+        <td>64</td>
+        <td>58</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>Charizard</td>
+        <td>84</td>
+        <td>78</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>Squirtle</td>
+        <td>48</td>
+        <td>65</td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td>Wartortle</td>
+        <td>63</td>
+        <td>80</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td>Blastoise</td>
+        <td>83</td>
+        <td>100</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
