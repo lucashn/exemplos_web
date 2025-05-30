@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            width: 500px;
+            border: 1px solid black;
+            margin: 100px auto;
+            column-gap: 20px;
+            row-gap: 5px;
+        }
+
+        label {
+            grid-column: 1 / 2;
+            text-align: right;
+        }
+
+        input,
+        button,
+        select {
+            grid-column: 2 / 3;
+        }
+
+        fieldset {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Garden Pizza - Pedido online</h1>
+
+    <form action="https://reqbin.com/echo/post/form" method="post">
+        <h2>Seus dados</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone">
+
+        <h2>Sua pizza</h2>
+        <label for="tamanho">Tamanho:</label>
+
+        <fieldset>
+            <input type="radio" id="pequena" name="tamanho" value="Pequena">
+            <label for="pequena">Pequena</label>
+
+            <input type="radio" id="media" name="tamanho" value="Média">
+            <label for="media">Média</label>
+
+            <input type="radio" id="grande" name="tamanho" value="Grande">
+            <label for="grande">Grande</label>
+        </fieldset>
+
+        <label for="sabor">Sabor:</label>
+        <select id="sabor" name="sabor">
+            <option value="calabresa">Calabreza</option>
+            <option value="frango">Frango</option>
+            <option value="marguerita">Marguerita</option>
+            <option value="portuguesa">Portuguesa</option>
+        </select>
+
+        <label for="borda_recheada">Borda recheada:</label>
+
+        <input type="checkbox" id="borda_recheada" name="borda_recheada" value="Borda recheada">
+        <input type="submit" value="Pedir pizza!">
+    </form>
+</body>
+
+</html>
