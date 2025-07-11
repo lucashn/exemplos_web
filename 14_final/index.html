@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Volei Mestre</title>
+    <script src="loja.js"></script>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body onload="mostrarProdutos()">
+    <div id="container">
+        <h1>Produtos</h1>
+
+        <div id="caixa_busca">
+            <label for="texto_busca">Filtro:</label>
+            <input id="texto_busca" type="text" oninput="filtrar()">
+            <input id="somente_nome" type="checkbox" oninput="filtrar()" checked>
+            <label for="somente_nome">Somente no nome</label>
+        </div>
+
+        <ul id="lista_produtos">
+        </ul>
+    </div>
+</body>
+
+</html>
