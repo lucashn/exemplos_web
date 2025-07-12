@@ -39,14 +39,28 @@ let produtos = [
 let filtrado = produtos
 
 function mostrarProdutos() {
-    let lista = document.getElementById("lista_produtos")
-    lista.innerHTML = ""
+    let porta_card = document.getElementById("porta_card")
+    porta_card.innerHTML = ""
 
     for (let i = 0; i < filtrado.length; i++) {
         let p = filtrado[i]
-        let el = document.createElement("li")
-        el.innerText = "Nome: " + p.nome + " preço:" + p.preco
-        lista.appendChild(el)
+
+        // card
+        let card = document.createElement("div")
+        card.className = "card"
+
+        // titulo do card
+        let titulo = document.createElement("h2")
+        titulo.innerHTML = p.nome
+
+        // texto do card
+        let texto = document.createElement("p")
+        texto.innerHTML = p.descricao
+
+        card.appendChild(titulo)
+        card.appendChild(texto)
+
+        porta_card.appendChild(card)
     }
 }
 

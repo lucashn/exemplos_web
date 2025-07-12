@@ -12,3 +12,22 @@
 #lista_produtos li {
     margin-top: 20px;
 }
+
+#porta_card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.card h2, .card p {
+    margin: 20px;
+}
+
