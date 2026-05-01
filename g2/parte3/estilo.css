@@ -1,0 +1,132 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c4170c;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#barra-links {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#barra-links li {
+    padding: 12px;
+}
+
+#barra-links li:hover {
+    border-bottom: 2px solid #c4170c;
+}
+
+#barra-links ul {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+#barra-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#barra-links a {
+    text-decoration: none;
+}
+
+#destaque {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    gap: 15px;
+    height: 500px;
+}
+
+#destaque-direita {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+}
+
+#destaque-esquerda {
+    background-image: url("img/patinho.jpg");
+}
+
+#manchete-dir-1 {
+    background-image: url("img/danca.webp");
+}
+
+#manchete-dir-2 {
+    background-image: url("img/caetano.jpg");
+}
+
+.titulo-manchete {
+    color: white;
+    font-size: 26pt;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.manchete {
+    flex: 1;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.item-cabecalho {
+    flex: 1;
+}
+
+.centro {
+    text-align: center;
+}
+
+.dir {
+    text-align: right;
+}
+
+.c1 {
+    color: #0669de;
+}
+
+.c2 {
+    color: #c4170c;
+}
+
+.c3 {
+    color: #ff6700;
+}
+
+.c4 {
+    color: #fb0334;
+}
+
+.c5 {
+    color: #c4170c;
+}
+
+.c6 {
+    color: #1e4c9a;
+}
+
+.c7 {
+    color: #006767;
+}
+
+/* #a6130a */
