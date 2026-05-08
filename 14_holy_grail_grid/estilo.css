@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: lightcoral;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: lightcoral;
+    height: 40px;
+    padding: 20px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    background-color: lightskyblue;
+}
+
+aside {
+    display: flex;
+    background-color: lightskyblue;
+}
+
+main {
+    padding: 30px;
+}
+
+article {
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#container {
+    display: grid;
+
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "navegacao principal propaganda"
+        "rodape rodape rodape";
+
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+nav {
+   grid-area: navegacao; 
+}
+
+main {
+    grid-area: principal;
+}
+
+aside {
+    grid-area: propaganda;
+}
+
+footer {
+    grid-area: rodape;
+}
