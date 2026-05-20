@@ -1,0 +1,51 @@
+:root {
+    --cor-principal: rgb(40, 40, 132);
+    --cor-secundaria: rgb(224, 69, 69);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    
+    grid-template-rows: 150px auto 50px;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: var(--cor-secundaria);
+    color: rgb(255, 255, 194);
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px grey;
+}
